@@ -1,0 +1,35 @@
+/* Set the font family for the entire page */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Set the background color and text color for the entire page */
+body.dark-blue {
+  background-color: #1a202c;
+  color: #fff;
+}
+
+/* Style the heading */
+h1 {
+  color: #ff00ff;
+  /* This is a bright pink color */
+}
+
+/* Style the paragraph */
+p {
+  color: #ccc;
+  /* This is a light gray color */
+}
+
+/* Style the button */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff00ff;
+  /* This is a bright pink color */
+}
