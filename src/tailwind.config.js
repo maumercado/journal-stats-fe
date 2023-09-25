@@ -1,8 +1,11 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  presets: [
+    require('@acmecorp/base-tailwind-config')
+  ],
+  content: ['node_modules/preline/dist/*.js', "./src/**/*.{html,js}",],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -14,5 +17,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('preline/plugin')
+  ],
 };
